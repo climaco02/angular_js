@@ -8,15 +8,15 @@
 	<div class="col-md-6">
 		<div class="form-group">
 			<label>Título</label>
-			<input name="titulo" class="form-control">
+			<input name="titulo" class="form-control" ng-model="foto.titulo">
 		</div>
 		<div class="form-group">
 			<label>URL</label>
-			<input name="url" class="form-control">
+			<input name="url" class="form-control" ng-model="foto.url">
 		</div>
 		<div class="form-group">
 			<label>Descrição</label>
-			<textarea name="descricao" class="form-control"></textarea>
+			<textarea name="descricao" class="form-control" ng-model="foto.descricao"></textarea>
 		</div>
 
 		<button type="submit" class="btn btn-primary">
