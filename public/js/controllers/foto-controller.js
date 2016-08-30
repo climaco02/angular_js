@@ -6,10 +6,12 @@ angular.module('alurapic')
 			if($scope.formulario.$valid){
 				$http.post('/v1/fotos', $scope.foto)
 				.success(function(){
-					console.log('Foto adicionada com sucesso');
+					$scope.foto = {};
+					$scope.mensagem = 'Foto adicionada com sucesso';
 				})
 				.error(function(erro) {
-					console.log('Nao foi possivel cadastrar a foto');
+					console.log(erro);
+					$scope.mensagem = 'Nao foi possivel cadastrar a foto';
 				})
 			}
 		};
