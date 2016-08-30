@@ -1,10 +1,10 @@
 <!-- foto.html -->
 
 <div class="page-header text-center">
-	<h1>TITULO DA FOTO AQUI</h1>
+	<h1>{{foto.titulo}}</h1>
 </div>
 
-<form name="formulario" class="row">
+<form novalidate name="formulario" class="row" ng-submit="submeter()">
 	<div class="col-md-6">
 		<div class="form-group">
 			<label>Título</label>
